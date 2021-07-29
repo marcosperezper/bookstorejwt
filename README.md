@@ -1,6 +1,6 @@
 #### **Bookstore API**
 
-A simple project using Django, Django-rest framework and postgres as a database manager.
+A simple project using Django, Django-rest framework, jwt for the authentication and postgres as a database manager.
 
 In the API are 2 endpoints:
 
@@ -15,3 +15,5 @@ There is a superuser created with the following credentials:
 **user: librero**
 
 **password: librero**
+
+The API has enabled all the basic endpoints to login and register that are included in the _rest_auth_ package

@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework import routers
-from .views import BookViewSet, AuthorViewSet
+from .views import BookViewSet, AuthorViewSet, welcome
 
 routers = routers.DefaultRouter()
 routers.register(r'books', BookViewSet, basename="books")
@@ -12,4 +12,5 @@ routers.register(r'authors', AuthorViewSet, basename="authors")
 urlpatterns = [
     path('', include(routers.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('welcome/', welcome)
 ]
